@@ -1,2 +1,6 @@
 /.github
 /.idea
+
+/.nycrc.json
+/.nycrc.yaml
+/nyc.config.js
