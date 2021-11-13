@@ -1,6 +1,6 @@
 # Mocha - Chai
 
-Peer dependencies for testing.
+Dependencies for testing typescript modules.
 
 ```json
 {

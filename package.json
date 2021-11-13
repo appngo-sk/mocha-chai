@@ -1,7 +1,7 @@
 {
   "name": "@appngo-sk/mocha-chai",
-  "version": "1.0.0",
-  "description": "Peer dependencies for testing.",
+  "version": "1.0.1",
+  "description": "Dependencies for testing typescript modules.",
   "homepage": "https://github.com/appngo-sk/mocha-chai#readme",
   "repository": "github:romanstrazanec/appngo-sk/mocha-chai.git",
   "bugs": {
@@ -15,7 +15,7 @@
   ],
   "license": "ISC",
   "main": ".nycrc.json",
-  "peerDependencies": {
+  "dependencies": {
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
     "chai": "^4.3.4",
