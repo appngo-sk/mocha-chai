@@ -8,16 +8,26 @@
     "url": "https://github.com/appngo-sk/packages-for-test/issues",
     "email": "strazanec.roman@gmail.com"
   },
-  "keywords": ["test", "testing", "mocha", "chai", "nyc", "bdd", "tdd", "coverage"],
+  "keywords": [
+    "test",
+    "testing",
+    "mocha",
+    "chai",
+    "nyc",
+    "bdd",
+    "tdd",
+    "coverage"
+  ],
   "author": "AppNGo <appngo.sk@gmail.com> (https://github.com/appngo-sk)",
   "contributors": [
     "Roman Stražanec <strazanec.roman@gmail.com> (https://github.com/romanstrazanec)"
   ],
   "license": "ISC",
-  "main": ".nycrc.json",
+  "main": ".nycrc",
   "dependencies": {
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.7",
     "chai": "^4.3.4",
     "mocha": "^9.1.3",
     "nyc": "^15.1.0",
