@@ -29,6 +29,14 @@ extensions
 | `.nycrc.yml`    | YAML             |
 | `nyc.config.js` | CommonJS export  |
 
+The content of the file should `extend` this module.
+
+```json
+{
+  "extends": "@appngo-sk/mocha-chai"
+}
+```
+
 ## Dependencies
 
 ```json
@@ -47,11 +55,15 @@ extensions
 
 ### [Typescript](https://www.npmjs.com/package/typescript)
 
+---
+
 [TypeScript](https://www.typescriptlang.org/) is a language for application-scale JavaScript. TypeScript adds optional
 types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS.
 TypeScript compiles to readable, standards-based JavaScript.
 
 ### [Mocha](https://www.npmjs.com/package/mocha)
+
+---
 
 Simple, flexible, fun JavaScript test framework for Node.js & The Browser.
 
@@ -71,6 +83,8 @@ Used with Typescript.
 
 ### [Chai](https://www.npmjs.com/package/chai)
 
+---
+
 Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript
 testing framework.
 
@@ -79,6 +93,8 @@ testing framework.
 Used with typescript.
 
 ### [nyc](https://www.npmjs.com/package/nyc)
+
+---
 
 JavaScript test coverage made simple.<br/>
 [Istanbul's](https://istanbul.js.org/) state of the art command line interface.
@@ -124,6 +140,8 @@ preset.
 
 ### [ts-node](https://www.npmjs.com/package/ts-node)
 
+---
+
 ts-node is a TypeScript execution engine and REPL for Node.js.
 
 It JIT transforms TypeScript into JavaScript, enabling you to directly execute TypeScript on Node.js without
@@ -138,7 +156,11 @@ mocha -r ts-node/register
 
 #### [Types](https://www.npmjs.com/package/@types/node)
 
+Types for node.
+
 ### [tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths)
+
+---
 
 Use this to load modules whose location is specified in the `paths` section of `tsconfig.json`. Both loading at run-time
 and via API are supported.
