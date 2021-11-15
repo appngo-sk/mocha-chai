@@ -16,6 +16,16 @@ or with `yarn`
 yarn add -D @appngo-sk/mocha-chai
 ```
 
+## Run script
+
+```shell
+nyc mocha --checkLeaks \
+    -r tsconfig-paths/register \
+    -r ts-node/register \
+    -r source-map-support/register \
+    "test/**/*.test.ts"
+```
+
 ## Configuration
 
 Create a configuration file `.nycrc` for `nyc` package inside of the project root directory with any of following
@@ -41,12 +51,14 @@ The content of the file should `extend` this module.
 
 ```json
 {
+  "@istanbuljs/nyc-config-typescript": "^1.0.1",
   "@types/chai": "^4.2.22",
   "@types/mocha": "^9.0.0",
   "@types/node": "^16.11.7",
   "chai": "^4.3.4",
   "mocha": "^9.1.3",
   "nyc": "^15.1.0",
+  "source-map-support": "^0.5.20",
   "ts-node": "^10.4.0",
   "tsconfig-paths": "^3.11.0",
   "typescript": "^4.4.4"
@@ -138,11 +150,37 @@ preset.
 | `check-coverage` | Check whether coverage is within thresholds, fail if not                                  | `true`                                                                                                                                                    | `false` |
 | `reporter`       | [Coverage reporters to use](https://istanbul.js.org/docs/advanced/alternative-reporters/) | [`text`](https://istanbul.js.org/docs/advanced/alternative-reporters/#html), [`html`](https://istanbul.js.org/docs/advanced/alternative-reporters/#html)  | `text`  |
 
+### [nyc config typescript](https://www.npmjs.com/package/@istanbuljs/nyc-config-typescript)
+
+---
+
+Handy default configuration for instrumenting your TypeScript-backed project with test coverage using `nyc`.
+
+#### .nycrc
+
+```json
+{
+  "extends": "@istanbuljs/nyc-config-typescript"
+}
+```
+
+### [Source map support](https://www.npmjs.com/package/source-map-support)
+
+---
+
+This module provides source map support for stack traces in node via
+the [V8 stack trace API](https://github.com/v8/v8/wiki/Stack-Trace-API). It uses
+the [source-map](https://github.com/mozilla/source-map)
+module to replace the paths and line numbers of source-mapped files with their original paths and line numbers. The
+output mimics node's stack trace format with the goal of making every compile-to-JS language more of a first-class
+citizen. Source maps are completely general (not specific to any one language) so you can use source maps with multiple
+compile-to-JS languages in the same node process.
+
 ### [ts-node](https://www.npmjs.com/package/ts-node)
 
 ---
 
-ts-node is a TypeScript execution engine and REPL for Node.js.
+`ts-node` is a TypeScript execution engine and REPL for Node.js.
 
 It JIT transforms TypeScript into JavaScript, enabling you to directly execute TypeScript on Node.js without
 precompiling. This is accomplished by hooking node's module loading APIs, enabling it to be used seamlessly alongside
