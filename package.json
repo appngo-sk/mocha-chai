@@ -1,6 +1,6 @@
 {
   "name": "@appngo-sk/mocha-chai",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Dependencies for testing typescript modules.",
   "homepage": "https://github.com/appngo-sk/mocha-chai#readme",
   "repository": "github:romanstrazanec/appngo-sk/mocha-chai.git",
