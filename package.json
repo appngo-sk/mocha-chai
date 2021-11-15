@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "Dependencies for testing typescript modules.",
   "homepage": "https://github.com/appngo-sk/mocha-chai#readme",
-  "repository": "github:romanstrazanec/appngo-sk/mocha-chai.git",
+  "repository": "github:appngo-sk/mocha-chai",
   "bugs": {
     "url": "https://github.com/appngo-sk/packages-for-test/issues",
     "email": "strazanec.roman@gmail.com"
